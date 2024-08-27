@@ -1,108 +1,108 @@
 .experiencia {
-  max-width: 1200px;
-  padding: 40px 20px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 100px;
+  max-width: 1200px; /* Define a largura máxima do container 'experiencia' */
+  padding: 40px 20px; /* Adiciona padding interno de 40px no topo e embaixo, 20px nas laterais */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  display: grid; /* Usa o layout de grid para organizar os filhos */
+  grid-template-columns: 1fr 2fr; /* Define duas colunas, com a segunda coluna sendo o dobro da primeira */
+  gap: 100px; /* Espaço de 100px entre as colunas */
 }
 
 .experiencia .subtitulo {
-  color: #e0e0e0;
+  color: #e0e0e0; /* Define a cor do subtítulo como cinza claro */
 }
 
 .experiencia-texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
-  max-width: 40ch;
-  margin-bottom: 60px;
-  color: #525252;
+  font-size: 1.5rem; /* Define o tamanho da fonte do texto como 1.5 vezes o tamanho da fonte base */
+  line-height: 1.33; /* Define a altura da linha como 1.33 vezes o tamanho da fonte */
+  max-width: 40ch; /* Define a largura máxima do texto como 40 caracteres */
+  margin-bottom: 60px; /* Adiciona uma margem de 60px abaixo do texto */
+  color: #525252; /* Define a cor do texto como cinza escuro */
 }
 
 .experiencia-texto strong {
-  color: #141414;
+  color: #141414; /* Define a cor do texto em negrito como preto */
 }
 
 .empresa {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 20px;
-  padding: 20px;
-  background: #f5f5f5;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  position: relative;
+  display: grid; /* Usa o layout de grid para organizar os filhos */
+  grid-template-columns: 1fr 1fr; /* Define duas colunas de tamanho igual */
+  gap: 10px 20px; /* Espaço de 10px entre as linhas e 20px entre as colunas */
+  padding: 20px; /* Adiciona padding interno de 20px aos itens da empresa */
+  background: #f5f5f5; /* Define a cor de fundo como cinza claro */
+  margin-bottom: 20px; /* Adiciona uma margem de 20px abaixo dos itens da empresa */
+  border-radius: 4px; /* Define bordas arredondadas com raio de 4px */
+  position: relative; /* Define a posição do item da empresa como relativa para posicionar pseudo-elementos absolutos */
 }
 
 .empresa::before {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 20px;
-  background: linear-gradient(#b6f829, #67dd0a);
-  position: absolute;
-  top: 20px;
-  left: -4px;
+  content: ""; /* Adiciona conteúdo vazio antes do item da empresa (usado para a barra vertical) */
+  display: block; /* Faz com que o pseudo-elemento se comporte como um bloco */
+  width: 4px; /* Define a largura da barra vertical */
+  height: 20px; /* Define a altura da barra vertical */
+  background: linear-gradient(#b6f829, #67dd0a); /* Define um gradiente de cor verde para a barra vertical */
+  position: absolute; /* Posiciona o pseudo-elemento de forma absoluta dentro do item da empresa */
+  top: 20px; /* Define a posição do topo da barra vertical em relação ao topo do item da empresa */
+  left: -4px; /* Define a posição da esquerda da barra vertical em relação à esquerda do item da empresa */
 }
 
 .empresa-ano {
-  position: absolute;
-  top: 22px;
-  left: -100px;
-  text-align: right;
-  width: 80px;
-  color: #525252;
-  font-size: 0.875rem;
+  position: absolute; /* Posiciona o ano de forma absoluta dentro do item da empresa */
+  top: 22px; /* Define a posição do topo do ano em relação ao topo do item da empresa */
+  left: -100px; /* Define a posição da esquerda do ano em relação à esquerda do item da empresa */
+  text-align: right; /* Alinha o texto à direita */
+  width: 80px; /* Define a largura do ano */
+  color: #525252; /* Define a cor do texto como cinza escuro */
+  font-size: 0.875rem; /* Define o tamanho da fonte como 0.875 vezes o tamanho da fonte base */
 }
 
 .empresa-titulo {
-  font-size: 1.125rem;
-  line-height: 1.1;
-  font-weight: bold;
+  font-size: 1.125rem; /* Define o tamanho da fonte do título como 1.125 vezes o tamanho da fonte base */
+  line-height: 1.1; /* Define a altura da linha como 1.1 vezes o tamanho da fonte */
+  font-weight: bold; /* Define o peso da fonte como negrito */
 }
 
 .empresa-texto {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #525252;
+  font-size: 0.875rem; /* Define o tamanho da fonte do texto como 0.875 vezes o tamanho da fonte base */
+  line-height: 1.4; /* Define a altura da linha como 1.4 vezes o tamanho da fonte */
+  color: #525252; /* Define a cor do texto como cinza escuro */
 }
 
 .empresa-habilidades {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-content: start;
+  display: flex; /* Usa o layout flexível para os itens de habilidades */
+  flex-wrap: wrap; /* Permite que os itens de habilidades quebrem para a linha seguinte se necessário */
+  gap: 10px; /* Espaço de 10px entre os itens de habilidades */
+  align-content: start; /* Alinha o conteúdo ao início do contêiner flexível */
 }
 
 .empresa-habilidades li {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  border-radius: 4px;
-  background: #ffffff;
-  padding: 5px 10px;
+  font-size: 0.875rem; /* Define o tamanho da fonte dos itens de habilidades como 0.875 vezes o tamanho da fonte base */
+  line-height: 1.4; /* Define a altura da linha como 1.4 vezes o tamanho da fonte */
+  border-radius: 4px; /* Define bordas arredondadas com raio de 4px */
+  background: #ffffff; /* Define a cor de fundo dos itens de habilidades como branco */
+  padding: 5px 10px; /* Adiciona padding interno de 5px no topo e embaixo, 10px nas laterais */
 }
 
 @media (max-width: 800px) {
   .experiencia {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr; /* Muda o layout das colunas para uma única coluna em telas menores que 800px */
+    gap: 40px; /* Reduz o espaço entre os itens para 40px */
   }
   .experiencia .subtitulo {
-    color: #141414;
+    color: #141414; /* Define a cor do subtítulo como preto em telas menores que 800px */
   }
   .experiencia-texto {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Reduz o tamanho da fonte do texto para 1.25 vezes o tamanho da fonte base em telas menores que 800px */
   }
   .empresa-ano {
-    position: initial;
-    order: 1;
-    width: initial;
-    text-align: left;
+    position: initial; /* Reseta a posição do ano para o comportamento padrão em telas menores que 800px */
+    order: 1; /* Muda a ordem dos itens para que o ano apareça antes dos outros elementos */
+    width: initial; /* Reseta a largura do ano para o comportamento padrão */
+    text-align: left; /* Alinha o texto à esquerda em telas menores que 800px */
   }
 }
 
 @media (max-width: 400px) {
   .empresa {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Muda o layout das colunas para uma única coluna em telas menores que 400px */
   }
 }
