@@ -1,63 +1,63 @@
 .introducao {
-  max-width: 1200px;
-  padding: 40px 20px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 100px;
-  align-items: center;
+  max-width: 1200px; /* Define a largura máxima do container 'introducao' */
+  padding: 40px 20px; /* Adiciona padding interno de 40px no topo e embaixo, 20px nas laterais */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  display: grid; /* Usa o layout de grid para organizar os filhos */
+  grid-template-columns: 1fr 2fr; /* Define duas colunas, com a segunda coluna sendo o dobro da primeira */
+  gap: 100px; /* Espaço de 100px entre as colunas */
+  align-items: center; /* Alinha verticalmente os itens no centro da área de grid */
 }
 
 .introducao h1 {
-  font-size: 4.5rem;
-  line-height: 1.125;
-  margin-bottom: 30px;
-  position: relative;
+  font-size: 4.5rem; /* Define o tamanho da fonte do título como 4.5 vezes o tamanho da fonte base */
+  line-height: 1.125; /* Define a altura da linha como 1.125 vezes o tamanho da fonte */
+  margin-bottom: 30px; /* Adiciona uma margem de 30px abaixo do título */
+  position: relative; /* Define o título como relativo para posicionar o pseudo-elemento ::before */
 }
 
 .introducao h1::before {
-  content: "";
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url("../img/detalhe.svg") no-repeat center;
-  position: absolute;
-  top: -15px;
-  left: -40px;
-  z-index: -1;
+  content: ""; /* Adiciona conteúdo vazio antes do título (usado para a imagem de fundo) */
+  display: block; /* Faz com que o pseudo-elemento se comporte como um bloco */
+  width: 130px; /* Define a largura do pseudo-elemento */
+  height: 100px; /* Define a altura do pseudo-elemento */
+  background: url("../img/detalhe.svg") no-repeat center; /* Adiciona uma imagem de fundo ao pseudo-elemento, centralizando-a e sem repetir */
+  position: absolute; /* Posiciona o pseudo-elemento de forma absoluta dentro do título */
+  top: -15px; /* Define a posição do topo do pseudo-elemento em relação ao topo do título */
+  left: -40px; /* Define a posição da esquerda do pseudo-elemento em relação à esquerda do título */
+  z-index: -1; /* Coloca o pseudo-elemento atrás do título */
 }
 
 .introducao p {
-  font-size: 1.5rem;
-  color: #525252;
+  font-size: 1.5rem; /* Define o tamanho da fonte do parágrafo como 1.5 vezes o tamanho da fonte base */
+  color: #525252; /* Define a cor do texto do parágrafo */
 }
 
 @media (max-width: 1000px) {
   .introducao h1 {
-    font-size: 3rem;
+    font-size: 3rem; /* Reduz o tamanho da fonte do título para 3 vezes o tamanho da fonte base em telas menores que 1000px */
   }
 }
 
 @media (max-width: 800px) {
   .introducao {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr; /* Muda o layout das colunas para duas colunas de tamanho igual em telas menores que 800px */
+    gap: 40px; /* Reduz o espaço entre as colunas para 40px */
   }
   .introducao h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Reduz o tamanho da fonte do título para 2 vezes o tamanho da fonte base em telas menores que 800px */
   }
   .introducao h1::before {
-    width: 30px;
-    height: 10px;
-    left: 0px;
+    width: 30px; /* Reduz a largura do pseudo-elemento */
+    height: 10px; /* Reduz a altura do pseudo-elemento */
+    left: 0px; /* Ajusta a posição da esquerda do pseudo-elemento para 0px */
   }
 }
 
 @media (max-width: 400px) {
   .introducao {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Muda o layout para uma única coluna em telas menores que 400px */
   }
   .introducao img {
-    display: none;
+    display: none; /* Esconde a imagem dentro do container 'introducao' em telas menores que 400px */
   }
 }
